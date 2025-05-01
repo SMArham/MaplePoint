@@ -1,0 +1,177 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Maple Point Group of Companies for IT and accounting services">
+    <title>Contact Us | Maple Point Group of Companies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" aria-label="Maple Point Group of Companies">
+                    <svg class="logo-svg" viewBox="0 0 200 50" aria-hidden="true">
+                        <text x="10" y="30" fill="#4a6741">Maple Point</text>
+                    </svg>
+                </a>
+            </div>
+            <nav class="nav" role="navigation">
+                <button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle menu">
+                    <svg class="menu-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                        <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <ul id="primary-menu" class="menu">
+                    <li class="menu-item"><a href="index.html">Home</a></li>
+                    <li class="menu-item"><a href="about.html">About Us</a></li>
+                    <li class="menu-item"><a href="services.html">Services</a></li>
+                    <li class="menu-item current"><a href="contact.html">Contact Us</a></li>
+                    <li class="menu-item"><a href="consultation.html" class="btn btn-primary">Get A Consultation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch with our team</p>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Get In Touch</h2>
+                        <p>Have questions or want to learn more about our services? Fill out the form and we'll get back to you as soon as possible.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p>Phone: <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                            </div>
+                            <div class="contact-item">
+                                <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p>Email: <a href="mailto:info@maplepoint.com">info@maplepoint.com</a></p>
+                            </div>
+                            <div class="contact-item">
+                                <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p>Office Hours: Monday - Friday, 9:00 AM - 5:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-container">
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required aria-required="true">
+                                <span class="error-message" aria-live="polite"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required aria-required="true">
+                                <span class="error-message" aria-live="polite"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Which service are you interested in? *</label>
+                                <select id="service" name="service" required aria-required="true">
+                                    <option value="" disabled selected>Select a service</option>
+                                    <option value="website-design">Website Design</option>
+                                    <option value="wordpress-development">WordPress Development</option>
+                                    <option value="corporate-services">Corporate Services</option>
+                                    <option value="personal-tax">Personal Tax</option>
+                                    <option value="bookkeeping">Bookkeeping Services</option>
+                                    <option value="gst-hst">GST/HST</option>
+                                    <option value="consulting">Consulting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="error-message" aria-live="polite"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                                <span class="error-message" aria-live="polite"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </div>
+                        </form>
+                        <div id="form-success" class="form-success hidden">
+                            <svg viewBox="0 0 24 24" width="48" height="48" aria-hidden="true">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <h3>Thank You!</h3>
+                            <p>Your message has been sent successfully. We'll get back to you as soon as possible.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">Maple Point Group of Companies</h3>
+                    <p>We deliver premium IT and accounting services to help your business thrive.</p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="maplepoint-it.html">IT Services</a></li>
+                        <li><a href="maplepoint-accounting.html">Accounting Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <address>
+                        <p>Email: <a href="mailto:info@maplepoint.com">info@maplepoint.com</a></p>
+                        <p>Phone: <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                    </address>
+                    <div class="social-media">
+                        <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Maple Point Group of Companies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
