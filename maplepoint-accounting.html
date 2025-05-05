@@ -1,23 +1,28 @@
 <!-- maplepoint-accounting.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Accounting services offered by Maple Point Group of Companies including Corporate Services, Personal Tax, Bookkeeping, GST/HST, and Consulting">
-    <title>MaplePoint Accounting Services | Maple Point Group of Companies</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Maple Point Group of Companies - Premium IT and accounting services to help your business thrive">
+        <title>MaplePoint Group of Companies | Home</title>
+      
+        <!-- Favicon: PNG -->
+        <link rel="icon" href="./assets/favicon.png" type="image/png">
+      
+        
+      
+        <link rel="stylesheet" href="style.css">
+      </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="logo">
                 <a href="index.html" aria-label="Maple Point Group of Companies">
-                    <svg class="logo-svg" viewBox="0 0 200 50" aria-hidden="true">
-                        <text x="10" y="30" fill="#4a6741">Maple Point</text>
-                    </svg>
+                    <img src="./assets/loogoos.png" alt="Maple Point" class="logo-svg">
                 </a>
             </div>
+            
             <nav class="nav" role="navigation">
                 <button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle menu">
                     <svg class="menu-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
@@ -28,7 +33,7 @@
                     <li class="menu-item"><a href="index.html">Home</a></li>
                     <li class="menu-item"><a href="about.html">About Us</a></li>
                     <li class="menu-item current"><a href="services.html">Services</a></li>
-                    <li class="menu-item"><a href="contact.html">Contact Us</a></li>
+                    <li class="menu-item"><a href="https://form.jotform.com/251242660616048">Contact Us</a></li>
                     <li class="menu-item"><a href="consultation.html" class="btn btn-primary">Get A Consultation</a></li>
                 </ul>
             </nav>
@@ -44,19 +49,26 @@
         </section>
 
         <section class="service-description">
-            <div class="container">
-                <div class="service-icon">
-                    <svg viewBox="0 0 24 24" width="64" height="64" aria-hidden="true">
-                        <path d="M4 21v-7M4 10V3M12 21v-4M12 13V3M20 21v-2M20 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-                <div class="service-content">
-                    <p>MaplePoint Accounting provides comprehensive financial services to help businesses and individuals manage their finances effectively. Our team of experienced accountants delivers accurate, timely, and professional services tailored to your specific needs.</p>
-                    
-                    <p>We understand that every client has unique financial requirements. That's why we take a personalized approach to each engagement, working closely with you to develop solutions that address your specific challenges and help you achieve your financial goals.</p>
-                </div>
+            <div class="container service-card">
+              <div class="service-icon">
+                <img 
+                  src="./assets/accounting2.png" 
+                  alt="Accounting service illustration" 
+                  width="250" 
+                  height="200"
+                >
+              </div>
+              <div class="service-content">
+                <p>
+                  MaplePoint Accounting provides comprehensive financial services to help businesses and individuals manage their finances effectively. Our team of experienced accountants delivers accurate, timely, and professional services tailored to your specific needs.
+                </p>
+                <p>
+                  We understand that every client has unique financial requirements. That's why we take a personalized approach to each engagement, working closely with you to develop solutions that address your specific challenges and help you achieve your financial goals.
+                </p>
+              </div>
             </div>
-        </section>
+          </section>
+          
 
         <section class="service-offerings">
             <div class="container">
@@ -143,59 +155,34 @@
             </div>
         </section>
 
-        <section class="why-choose">
-            <div class="container">
-                <h2 class="section-title">Why Choose MaplePoint Accounting?</h2>
-                <div class="benefits-grid">
-                    <div class="benefit">
-                        <div class="benefit-icon">
-                            <svg viewBox="0 0 24 24" width="36" height="36" aria-hidden="true">
-                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                            </svg>
-                        </div>
-                        <h3>Expertise</h3>
-                        <p>Our team consists of qualified accountants with extensive experience across various industries.</p>
-                    </div>
-                    <div class="benefit">
-                        <div class="benefit-icon">
-                            <svg viewBox="0 0 24 24" width="36" height="36" aria-hidden="true">
-                                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="currentColor" stroke-width="2" fill="none"/>
-                                <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <h3>Timeliness</h3>
-                        <p>We understand the importance of meeting deadlines and deliver our services promptly.</p>
-                    </div>
-                    <div class="benefit">
-                        <div class="benefit-icon">
-                            <svg viewBox="0 0 24 24" width="36" height="36" aria-hidden="true">
-                                <rect width="18" height="18" x="3" y="3" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
-                                <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <h3>Accuracy</h3>
-                        <p>We pride ourselves on the accuracy and reliability of our financial services.</p>
-                    </div>
-                    <div class="benefit">
-                        <div class="benefit-icon">
-                            <svg viewBox="0 0 24 24" width="36" height="36" aria-hidden="true">
-                                <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <h3>Personalized Approach</h3>
-                        <p>We tailor our services to address your specific financial needs and goals.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         <section class="cta">
             <div class="container">
                 <h2>Ready to optimize your financial management?</h2>
                 <p>Contact us today to discuss your accounting needs.</p>
                 <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                    <a href="https://form.jotform.com/251242660616048" class="btn btn-primary">Contact Us</a>
                     <a href="consultation.html" class="btn btn-secondary">Schedule a Consultation</a>
                 </div>
             </div>
@@ -206,16 +193,21 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-column">
-                    <h3 class="footer-title">Maple Point Group of Companies</h3>
-                    <p>We deliver premium IT and accounting services to help your business thrive.</p>
+                    <h3 class="footer-title">MaplePoint Group of Companies</h3>
+                    <p>We deliver IT and accounting services to help your business thrive.</p>
                 </div>
                 <div class="footer-column">
                     <h3 class="footer-title">Quick Links</h3>
                     <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+
                         <li><a href="maplepoint-it.html">IT Services</a></li>
                         <li><a href="maplepoint-accounting.html">Accounting Services</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="https://form.jotform.com/251242660616048">Contact Us</a></li>
+
+                        <li><a href="consultation.html" >Get A Consultation</a></li>
+
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -241,7 +233,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 Maple Point Group of Companies. All rights reserved.</p>
+                <p>&copy; 2025 MaplePoint Group of Companies. All rights reserved.</p>
             </div>
         </div>
     </footer>

@@ -79,9 +79,9 @@
      -------------------------------------------------------------------------- */
   :root {
     /* Primary Colors */
-    --color-primary: #4a6741; /* Maple green accent color */
-    --color-primary-light: #6b8d61;
-    --color-primary-dark: #334d29;
+    --color-primary: #8A2523; /* Maple green accent color */
+    --color-primary-light: #7B211F;
+    --color-primary-dark: #7B211F;
     
     /* Neutral Colors */
     --color-white: #ffffff;
@@ -215,9 +215,11 @@
   /* --------------------------------------------------------------------------
      4. Layout
      -------------------------------------------------------------------------- */
-  section {
-    padding: var(--space-xl) 0;
-  }
+ section {
+  /* top = var(--space-xl), left/right = 0, bottom = var(--space-xxl) */
+  padding: var(--space-xl) 0 var(--space-xxl);
+}
+
   
   .page-header {
     background-color: var(--color-light-gray);
@@ -451,7 +453,7 @@
     box-shadow: var(--shadow);
     padding: var(--space-sm) 0;
     position: sticky;
-    top: 0;
+    top: -6px;
     z-index: var(--z-index-header);
   }
   
@@ -461,10 +463,9 @@
     align-items: center;
   }
   
-  /* .logo {
+   .logo {
     flex-shrink: 0;
-  } */
-  
+  }
   .logo-svg {
     height: 100px; /* Adjust as needed */
     width: auto;
@@ -534,11 +535,13 @@
   /* --------------------------------------------------------------------------
      9. Hero Section
      -------------------------------------------------------------------------- */
-  .hero {
-    padding: var(--space-xxl) 0;
-    text-align: center;
-    position: relative;
-  }
+     .hero {
+      padding: var(--space-xxl) 0 calc(var(--space-xxl) * 2);
+     
+      text-align: center;
+      position: relative;
+    }
+    
   
   .hero-title {
     font-size: var(--font-size-huge);
@@ -1115,3 +1118,220 @@
     margin-bottom: var(--space-lg);
   }
   
+
+ /* .service-icon img {
+  display: block;      
+  max-width: 100%;     
+  height: auto;        
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Option A: apply to ALL buttons */
+.btn {
+  display: inline-block;
+  width: 230px;           /* sets a fixed width */
+  /* …other existing rules… */
+}
+
+/* Option B: only target the consultation button */
+.btn.btn-primary {
+  display: inline-block;
+  min-width: 200px;       /* ensures it’s at least 200px, but can grow */
+  /* inherits other .btn properties via your existing selector */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.service-description {
+  padding: 60px 20px;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-card {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.service-icon {
+  flex: 0 0 250px;
+  background: linear-gradient(120deg, #ffffff, #ffffff);
+  padding: 30px;
+  text-align: center;
+  
+}
+
+
+
+
+
+.service-icon {
+  /* make wrapper fill the available space */
+  width: 100%;
+  /* now center anything inside it */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* if you also want vertical centering */
+}
+
+.service-icon img {
+  display: block;        /* so margin tricks work */
+  max-width: 250px;      /* your chosen cap */
+  width: 100%;
+  height: auto;
+  /* margin no longer needed when using flexbox */
+}
+
+
+.service-text {
+  background: #fafbfd;
+  border-left: 4px solid #ffffff;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #333;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+
+/* service-card layout */
+.service-card {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* icon wrapper: full width on small, fixed on large */
+.service-icon {
+  flex: 0 0 250px;    /* reserve 250px for the image on wide screens */
+  width: 100%;        /* full width on narrow screens */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* center & constrain the image */
+.service-icon img {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+/* content next to icon */
+.service-content {
+  flex: 1;
+  padding: 30px 40px;
+}
+
+/* text styling */
+.service-content p {
+  background: #fafbfd;
+  border-left: 4px solid #ffffff;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #333;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.service-content p:hover {
+  background: #f0f1f7;
+}
+
+/* responsive breakpoint */
+@media (max-width: 768px) {
+  .service-card {
+    flex-direction: column;
+  }
+  .service-icon,
+  .service-content {
+    padding: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cta-buttons {
+  display: flex;               /* turn it into a flex container */
+  justify-content: center;     /* center items horizontally */
+  flex-wrap: wrap;             /* allow wrapping on narrow viewports */
+  gap: 1rem;                   /* space between buttons */
+  margin-top: 1.5rem;          /* space above the buttons */
+}
+
+.cta-buttons .btn {
+  flex: 1 1 auto;              /* grow/shrink equally */
+  min-width: 150px;            /* don’t get too small */
+  max-width: 250px;            /* don’t grow too large */
+  text-align: center;          /* center the text inside */
+  padding: 0.75rem 1.5rem;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* On very small screens, stack them vertically */
+@media (max-width: 480px) {
+  .cta-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .cta-buttons .btn {
+    width: 100%;               /* full width of container */
+    max-width: none;
+  }
+}
+
+
+
+
