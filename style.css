@@ -1335,3 +1335,52 @@
 
 
 
+/* Hero Section Styling */
+.hero {
+  background: #ffffff; /* Light neutral background */
+  padding: 8rem 2rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.hero-title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+
+.hero-subtitle {
+  font-size: 1.7rem;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #333;
+  line-height: 1.8;
+  padding: 0 1rem;
+}
+
+.hero-subtitle1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #333;
+  line-height: 1.8;
+  padding: 0 1rem;
+  margin-bottom: 1.7rem; /* Adds spacing below the slogan */
+}
+
+
+
+
+/* Optional: Fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
