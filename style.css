@@ -238,13 +238,15 @@
   /* Buttons */
   .btn {
     display: inline-block;
-    padding: var(--space-xs) var(--space-md);
+  padding: 0.8rem 2.4rem 0.8rem 1.6rem; /* <-- bump left padding from 0.8 to 1.6 */
     border-radius: var(--border-radius);
     font-weight: 600;
     text-align: center;
     transition: all var(--transition);
     cursor: pointer;
   }
+
+  
   
   .btn-primary {
     background-color: var(--color-primary);
@@ -660,7 +662,7 @@
     margin-bottom: var(--space-sm);
     color: var(--color-primary);
     display: flex;
-    justify-content: center;
+justify-content: flex-start;
     align-items: center;
     padding: var(--space-sm);
   }
@@ -681,9 +683,11 @@
   }
   
   .service-content .btn {
-    margin-top: auto;
-    align-self: flex-start;
-  }
+  margin-top: auto;
+  align-self: flex-start;
+  /* top | right | bottom | left */
+}
+
   
   .service-description {
     display: flex;
@@ -1382,5 +1386,305 @@
 @keyframes fadeIn {
   to {
     opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Team Section Container */
+.team-members {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+/* Section Title */
+.team-members .section-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+  font-weight: 700;
+}
+
+/* Grid Layout */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Individual Card */
+.team-card {
+  background: #ffffff;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+/* Hover Effect */
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Name Styling */
+.team-card h3 {
+  font-size: 2rem;
+  margin: 0 0 0.5rem;
+  color: #0a0a0a;
+}
+
+/* Credentials Styling */
+.team-card p {
+  font-size: 1.4rem;
+  color: #555555;
+  margin: 0;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================
+   Responsive Image Grid
+   ============================ */
+.image-grid {
+  background-color: #f9f9f9;
+  padding: 3rem 0;
+}
+
+.image-grid .grid {
+  display: grid;
+  /* 4 columns at full-width, auto-fit into smaller cols */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.image-grid .grid-item {
+  overflow: hidden; /* clip overflow when zooming */
+  border-radius: 1rem;
+}
+
+.image-grid .grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* subtle card look */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-grid .grid-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;       /* keep some page padding */
+  }
+
+  .image-grid {
+    padding: 2rem 0;     /* vertical spacing */
+  }
+
+  .image-grid .grid {
+    display: grid;
+    grid-template-columns: 1fr;  /* one per row */
+    gap: 1rem;                   /* space between items */
+  }
+@media (max-width: 480px) {
+  /* … your existing mobile rules … */
+
+  .image-grid .grid-item {
+    padding: 0.75rem;
+    border-radius: 1rem;   /* ← keep the container rounded */
+    overflow: hidden;        /* ← clip the img inside */
+  }
+
+  .image-grid .grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 1rem;   /* ← round the image itself */
+  }
+}}
+
+
+
+
+
+
+
+
+
+
+.service-card {
+  display: flex;
+  flex-direction: column;          /* stacked by default (mobile) */
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.service-icon {
+  margin-bottom: var(--space-sm);
+  display: flex;
+  justify-content: flex-start;     /* was “left” – now correct */
+  align-items: center;
+  padding: var(--space-sm);
+}
+
+/* … your other rules … */
+
+/* On wider screens, put img & text side by side */
+@media (min-width: 768px) {
+  .service-card {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .service-icon {
+    margin-right: var(--space-md);
+  }
+
+  .service-content {
+    padding: var(--space-md);
+  }
+}
+
+
+.service-content .btn {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 0.8rem 2.4rem 0.8rem 0.8rem;
+  margin-left: 1rem; /* ← pushes the button right */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.certifications {
+  /* shrink-to-fit its children instead of 100% width */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;  /* center logos in the card */
+  gap: 2rem;                /* space between ACCA & CPA */
+
+  /* styling the card */
+  padding: 1.5rem 2rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+  /* optional centering on page */
+  margin: 2rem auto;
+}
+
+.cert-logo {
+  /* fluid sizing */
+  width: clamp(80px, 12vw, 120px);
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  cursor: pointer;
+}
+
+.cert-logo {
+  /* shrink overall a bit: min 60px, max 100px */
+  width: clamp(60px, 10vw, 100px);
+  height: auto;
+}
+
+.cpa-logo {
+  /* keep CPA slightly bigger but still scaled down: min 80px, max 140px */
+  width: clamp(80px, 12vw, 140px);
+  height: auto;
+}
+
+
+/* tablet tweak */
+@media (max-width: 768px) {
+  .certifications { padding: 1.25rem 1.5rem; gap: 1.5rem; }
+  .cert-logo { width: clamp(70px, 15vw, 100px); }
+  .cpa-logo   { width: clamp(90px, 20vw, 140px); }
+}
+
+/* mobile: stack nicely if you prefer */
+@media (max-width: 480px) {
+  .certifications {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1.25rem;
+  }
+  .cert-logo, .cpa-logo {
+    width: 60%;
+    max-width: 140px;
+    margin: 0 auto;
   }
 }
