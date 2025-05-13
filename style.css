@@ -1569,6 +1569,7 @@ justify-content: flex-start;
   box-shadow: var(--shadow);
   overflow: hidden;
   transition: transform var(--transition), box-shadow var(--transition);
+  
 }
 
 .service-icon {
@@ -1652,18 +1653,22 @@ justify-content: flex-start;
   object-fit: contain;
   transition: transform 0.25s ease, opacity 0.25s ease;
   cursor: pointer;
+  order: 2;
 }
 
 .cert-logo {
   /* shrink overall a bit: min 60px, max 100px */
   width: clamp(60px, 10vw, 100px);
   height: auto;
+
 }
 
 .cpa-logo {
   /* keep CPA slightly bigger but still scaled down: min 80px, max 140px */
   width: clamp(80px, 12vw, 140px);
   height: auto;
+      order: 1;
+
 }
 
 
