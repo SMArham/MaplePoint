@@ -1698,3 +1698,35 @@ justify-content: flex-start;
 .service-content {
   text-align: left;
 }
+
+
+
+
+
+
+
+/* (unchanged) */
+.social-media {
+  display: flex;
+  gap: 16px;
+}
+
+.social-media a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.social-media a:hover {
+  background-color: #e0e0e0;
+}
+
+.social-media .icon {
+  width: 24px;
+  height: 24px;
+}
