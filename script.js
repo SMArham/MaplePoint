@@ -1,5 +1,5 @@
 /**
- * Maple Point Group of Companies - Main JavaScript
+ * MaplePoint Group - Main JavaScript
  */
 
 // Wait for the DOM to be fully loaded
